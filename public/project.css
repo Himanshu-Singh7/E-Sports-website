@@ -1,0 +1,707 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container-fluid{
+  padding-left: 0;
+  padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
+  box-sizing: border-box;
+}
+
+#bg{
+  width: 100%;
+  height: 900px;
+  position: absolute;
+  top: 0px;
+  left: 0;
+  box-sizing: border-box;
+  background-image: url("Images/Logos/bg.png");
+  background-position: center;
+  background-repeat: repeat;      
+  background-size: cover;
+  filter: blur(3px);  
+  
+}
+
+#bg2{
+  width: 100%;
+  height: 1100px;
+  position: absolute;
+  top: 900px;
+  left: 0;
+  box-sizing: border-box;
+  background-image: url("Images/Wallpaper/Omen.png");
+  background-position: center;
+  background-repeat: repeat;      
+  background-size: cover;
+  filter: blur(3px);
+  opacity: 0.9;
+  
+}
+#bg3{
+  width: 100%;
+  height: 1350px;
+  position: absolute;
+  top: 2000px;
+  left: 0;
+  box-sizing: border-box;
+  background-image: url("Images/Wallpaper/bg2.jpg");
+  background-position: center;
+  background-repeat: repeat;      
+  background-size: cover;
+  filter: blur(3px);
+  opacity: 0.9;
+  
+}
+
+
+
+
+
+
+#cover-pic{
+width: 100%;
+height: 800px;
+/* border: none; */
+
+}
+
+/* Navbar */
+ul {
+    list-style-type: none;
+  }
+  a {
+    text-decoration: none;
+    cursor: pointer;
+  }
+  
+  .nav-center {
+    padding: 1em;
+    background:black;
+    width: 100%;
+    /*   align-items:center; */
+    /*   justify-content: space-between; */
+    width: 100%;
+  }
+  
+  .nav-header {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .nav-header h2{
+    cursor: pointer;
+    height: 40px;
+    float: left;
+    margin: 1em;
+    text-transform: uppercase;
+    color: white;
+    
+  }
+  
+  .links {
+    display: flex;
+    flex-direction: column;
+    /*   height: 80vh; */
+    transition: all 1s ease-in-out;
+    height: 0;
+    overflow: hidden;
+  }
+  
+  .show-links {
+    height: 80vh;
+    transition: all 1s ease-in-out;
+  }
+  .links li {
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    padding: 1em 1em;
+    margin: auto;
+  }
+  .links li a {
+    color: white;
+  
+    transition: 0.1s border linear;
+  }
+  .links li a:hover {
+    border-bottom: purple 4px solid;
+    text-decoration: none;
+  }
+  .social-icons {
+    display: flex;
+    height: 0vh;
+    overflow: hidden;
+  }
+  
+  .show-icons {
+    height: 10vh;
+    align-items: center;
+    border-top: 2px solid white;
+    overflow: visible;
+  }
+  .social-icons li {
+    margin: auto;
+  
+    font-size: 1.5rem;
+    transition: all 0.5s linear;
+  }
+  
+  .social-icons li a {
+    padding: 0.4em;
+    color: white;
+    transition: all 0.5s ease;
+    border-radius: 50%;
+  }
+  
+  .social-icons li a:hover {
+    background: purple;
+    color: white;
+  }
+  
+  .nav-toggle {
+    font-size: 1.5rem;
+    color: white;
+    background: transparent;
+    border-color: transparent;
+    transition: 1s all linear;
+    cursor: pointer;
+    justify-self: flex-end;
+    outline: none;
+  }
+  .nav-toggle:hover {
+    color: white;
+    transform: rotate(90deg);
+    outline: none;
+  }
+  
+  @media screen and (min-width: 800px) {
+    .nav-toggle {
+      display: none;
+    }
+  
+    .nav-header {
+      display: block;
+    }
+  
+    .links {
+      flex-direction: row;
+      height: auto;
+      display: flex;
+    }
+    .links li {
+      font-size: 1rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      padding: 1em 1em;
+      margin: auto;
+    }
+    .social-icons {
+      display: flex;
+      height: 100%;
+      align-items: center;
+      border: none;
+      padding:1em;
+    }
+  
+    .social-icons li {
+      margin: auto;
+  
+      font-size: 1.2rem;
+    }
+  
+    .nav-center {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    footer {
+      display: none;
+    }
+  }
+  
+/* Cover pic and logo */
+#moto{
+    position: absolute;
+    top: 15%;
+    right: 5%;
+    z-index: 2;
+    font-size: 120px;
+    font-family: 'Recursive', sans-serif;
+    color: #FF005D;
+    padding: 20px;
+    animation-name: myanime;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+
+    
+}
+@keyframes myanime{
+    10%{color: red;}
+    30%{color: green;}
+    50%{color: blue;}
+    70%{color: magenta;}
+    90%{color: violet;}
+    100%{color: white;}
+}
+
+#logo{
+    position: absolute;
+    top: 25%;
+    right: 15%;
+    z-index: 2;
+    font-size: 100px;
+    font-family: 'Recursive', sans-serif;
+    color: violet;
+    padding: 20px;
+   
+
+}
+#gaming-esports::before{
+    content: 'GAMING';
+    animation-name: gaming;
+    animation-timing-function: linear;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+
+}
+@keyframes gaming{
+    0%{content: 'GAMING';}
+    50%{content: 'ESPORTS';}
+}
+
+/* footer */
+#footer{
+    background:black;
+    /* opacity: 0.3; */
+    
+}
+#footer a i{
+    color: white;
+    margin-left: 20px;
+    font-size: 40px;
+    border-radius: 50%;
+    opacity: 1.0;
+    margin-top: 30px;
+    
+}
+#footer a i:hover{
+    color: purple;
+}
+#footer a{
+    color: white;
+    font-size: 30px;
+    font-family: 'Recursive','sans-serif';
+}
+#footer a:hover{
+    text-decoration: none;
+    color: purple;
+}
+
+
+/* Modal */
+.modal{
+  background-image: url("https://wallpapercave.com/wp/wp2661648.jpg");
+  
+  background-size: cover;
+  
+  background-position: center;
+  background-repeat: no-repeat;
+  
+}
+.modal-content{
+  background: linear-gradient(60deg,purple,black,purple,black,purple,black);
+    color: white;
+}
+
+
+
+
+/* .carousel */
+#Gamescarousel{
+  width: 100%;
+  height: 80%;
+  border-radius: 40px;
+  box-shadow: 2px 2px 10px black;
+}
+
+/* .swiper-slide {
+  background-position: center;
+  background-size: cover;
+} */
+
+#Gamesimg img{
+    width: 100%;
+    height: 100%;
+}
+
+
+
+
+
+/* Gallery */
+#gallery img{
+    width: 96%;
+    height: 30vh;
+    /* border: 5px solid black; */
+    border-radius: 5px;
+    /* box-shadow: 0px 0px 10px rgb(247, 62, 247); */
+    /* opacity: 0.5; */
+}
+
+#gallery img:hover{
+    /* transform: translateX(10px); */
+    transition: all 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+
+/* Sponser */
+
+#sponser img{
+    width: 70%;
+    height: 7vh;
+    
+}
+
+#sponser img:hover{
+    opacity: 1;
+    transform: scale(1.5);
+    transition: .15s ease-out;
+}
+
+
+/* News */
+#newsimg img{
+    width: 200px;
+    height: 200px;
+}
+
+#news h4:hover{
+    color: rgb(155, 5, 5);
+}
+
+.active{
+    color: rgb(83, 2, 2);
+}
+
+
+/* Reach */
+#fanbase b{
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    font-size: 40px;
+    color: black;
+    align-items: center;
+    justify-content: center;
+    width: 160px;
+    height: 160px;
+    border-radius: 50%;
+    border: 3px solid purple;
+    margin: 0 auto 20px auto;
+    font-weight: 700;
+    box-shadow: 0px 1px 5px 0px black;
+    
+        
+}
+
+#fanbase b:hover{
+    background:purple;
+    color: white;
+    transition:0.3s ease-in;
+}
+
+
+#homegallery .col-md-4{
+    width: 100%;
+    height: 40vh;
+    border: 4px solid white;
+    
+    animation-name: homeimage;
+    animation-duration: 50s;
+    animation-iteration-count: infinite;
+    animation-timing-function:linear;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#homegallery p{
+    color: #FF005D; 
+    font-size: 20px;
+    font-family: 'Raleway', sans-serif;
+    animation: homepara 30s infinite;
+}
+
+
+@keyframes homeimage{
+    0%{background-image: url(images/Gallery/Rizul_1.png);}
+    10%{background-image: url(images/Gallery/Rizul_6.jpg);}
+    20%{background-image: url(images/Gallery/Rizul_5.jpg);}
+    30%{background-image: url(images/Gallery/Rizul_9.jpg);}
+    40%{background-image: url(images/Gallery/Rizul_12.jpg);}
+    50%{background-image: url(images/Gallery/Rizul_16.jpg);}
+    60%{background-image: url(images/Gallery/Rizul_17.jpg);}
+    70%{background-image: url(images/Gallery/Rizul_18.jpg);}
+    80%{background-image: url(images/Gallery/Rizul_13.jpg);}
+    90%{background-image: url(images/Gallery/Rizul_19.jpg);}
+    100%{background-image: url(images/Gallery/Rizul_8.jpg);}
+    
+}
+
+@keyframes homepara{
+    0%{color: white;}
+    10%{color: #87bdd8;}
+    20%{color: #667292;}
+    30%{color: #5b9aa0;}
+    40%{color: #588c7e;}
+    50%{color:#96ceb4;}
+    60%{color:#4040a1;}
+    70%{color:#80ced6;}
+    80%{color:#36486b;}
+    90%{color:#3e4444;}
+    100%{color:#878f99;}
+      
+
+}
+
+
+
+
+#aboutback{
+  width: 100%;
+  height: 250px;
+  background: url('images/Wallpaper/About-Us.jpg');
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Dela Gothic One', cursive;
+  font-size: 2.5em;
+}
+
+#Aboutus p{
+    font-weight: 600;
+    font-size: 20px;
+}
+
+/* #message{
+    width: 100%;
+    height: 200px;
+    font-size: 15px;
+    
+}
+
+#message::placeholder{
+    position: absolute;
+    top: 0;
+    left: 0;
+} */
+
+
+#homenews img{
+    width: 180px ;
+    height: 180px;
+    border-radius: 30px;
+}
+
+#homenews b{
+    font-size: 16px;
+}
+
+#homenews p{
+    font-size: 14px;
+}
+
+#homenews h1{
+    transform: rotate(90deg);
+    font-size: 50px;
+    animation: readmore 1s infinite;
+}
+
+@keyframes readmore{
+    0%{margin-top:0px ;}
+    100%{margin-top: 5px;}
+    
+    
+}
+
+#homenews h2{
+    transform: rotate(-90deg);
+    font-size: 50px;
+}
+
+/* Homepage sponsers */
+.swiper-container {
+  width: 100%;
+  height: 200px;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+
+#sponsershomepage {
+    padding: 0;
+}
+
+#sponsershomepage img{
+    width: 60%;
+    height: 70px;
+}
+
+
+/* Register Page */
+#registerbackground{
+  /* height: 800px; */
+  background: url('bg.jpg');
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+#form{
+  height: auto;
+}
+#form label{
+  color: peachpuff !important;
+}
+#form input{
+  background: transparent !important;
+  color: white;
+  border: 2px dotted peachpuff;
+
+
+  
+}
+#form input::placeholder{
+  color: white;
+}
+
+.Countries{
+  background: transparent !important;
+  /* color: violet; */
+  width: 100%;
+  border: 2px dotted peachpuff;
+  padding: 8px ;
+}
+
+
+/* Login Page */
+#loginbg{
+  /* background:url('wallpaper/caspar-camille-rubin-oI6zrBj3nKw-unsplash.jpg'); */
+  /* background:url('wallpaper/pexels-pixabay-159393.jpg'); */
+  background: black;
+  
+  background-position: center;
+  background-size: cover;
+  
+}
+#firstbg{
+  background:url('Loginbg.jpg');
+  background-position: center;
+  background-size: cover;
+  border-radius: 40px;
+  border: 8px solid purple !important;
+}
+#firstbg h2{
+  font-size: 42px;
+  font-family: 'Times New Roman', Times, serif;
+  color: purple;
+}
+#secondbg{
+  background:transparent !important;
+}
+#secondbg label{
+  font-size: 20px;
+  color: white !important;
+
+      
+}
+#secondbg a{
+  text-decoration:none ;
+  margin-top: 20px;
+  font-size: 20px;
+  color: white;
+}
+#loginbtn{
+  background: violet;
+  color: white;
+  font-size: 22px;
+  font-family: 'Times New Roman', Times, serif;
+  border-radius: 30px;
+}
+
+#eye{
+  
+  position: relative;
+  
+}
+#eyes{
+  
+  position: relative;
+  left: 320px;
+  bottom: 30px;
+  width: 20px;
+  height: 20px;
+
+  
+}
+
+/* Tournamanet register form */
+#tournamentbg{
+  background: black;
+}
+#tournamentbg1{
+  background: url('Tournamentregbg.jpg');
+  background-size: cover;
+  background-position: center;
+  border: 8px solid violet;
+  border-radius: 30px;
+}
+#tournamentbg1 label{
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  text-transform: uppercase;
+
+}
+#tournamentbg1 input{
+  border-radius: 20px;
+  border: 3px solid violet;
+}
+#tournamentbg1 input::placeholder{
+  font-size: 13px;
+  text-transform: uppercase;
+}
+.mode{
+  /* padding: 20px; */
+  width: 80%;
+  padding: 8px ;
+  border-radius: 20px;
+  border: 3px solid violet;
+}

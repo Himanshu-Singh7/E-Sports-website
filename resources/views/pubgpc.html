@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Picasso Gaming</title>
+    <script src="extra/jquery.js"></script>
+    <script src="js/bootstrap.js"></script>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="project.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Recursive:wght@600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Recursive:wght@500&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <div id="bg"></div>
+
+    <!-- Header navigation bar -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12 px-0">
+                <nav>
+                    <div class="nav-center">
+                      <!-- nav header -->
+                      <div class="nav-header">
+                        <h2 >Picasso <span style="color: violet;" id="gaming-esports"></span></h2>
+                        <button class="nav-toggle">
+                          <i class="fas fa-bars"></i>
+                        </button>
+                      </div>
+                      <!-- links -->
+                      <ul class="links">
+                        <li>
+                          <a href="homepage.html">home</a>
+                        </li>
+                        <li>
+                          <a href="Events.html">Games</a>
+                        </li>
+                        <li>
+                          <a href="Gallery.html">Gallery</a>
+                        </li>
+                        <li>
+                          <a href="sponsers.html">Sponsers</a>
+                        </li>
+                        <li>
+                            <a href="News.html">News</a>
+                          </li>
+                          <li>
+                            <a href="About.html">about us</a>
+                          </li>
+
+                      </ul>
+                      <!-- social media -->
+                      <ul class="social-icons">
+                        
+                        <li>
+                          <a href="login.html">
+                            <i class="fas fa-sign-in-alt"></i>
+                          </a>
+                        </li>
+                        <li>
+                          <a href="Register.html">
+                            <i class="fas fa-user-plus"></i>
+                          </a>
+                        </li>
+                      </ul>
+                    </div>
+                  </nav>
+                
+            </div>
+        </div>
+
+        <script>
+            const navToggle = document.querySelector(".nav-toggle");
+       const links = document.querySelector(".links");
+       const socialIcons = document.querySelector(".social-icons");
+       
+       navToggle.addEventListener("click", function () {
+         console.log(links.classList);
+         links.classList.toggle("show-links");
+         socialIcons.classList.toggle("show-icons");
+       });
+        </script>
+            </div>
+        </div>
+</div>
+
+
+
+<div class="row">
+    <div class="col-md-8 mx-auto my-5 py-4 px-0">
+
+           <div class="row">
+               <div class="col-md-12 px-0 bg-dark text-center text-light">
+                   <h1>SYSTEM REQUIREMENTS</h1>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-md-6 px-0 text-center mt-2">
+                   <h2>Minimum specs</h2>
+                   <hr>
+               </div>
+               <div class="col-md-6 px-0 text-center mt-2">
+                   <h2>Recommended specs</h2>
+                   <hr>
+                   
+               </div>
+           </div>
+         
+           <div class="row">
+               <div class="col-md-6 mt-1">
+                   <span><b>CPU:</b> Intel Core i5-4430 / AMD FX-6300</span>
+                   <hr>
+               </div>
+               <div class="col-md-6 mt-1">
+                <span><b>CPU:</b> Intel Core i5-6600K / AMD Ryzen 5 1600</span>
+                <hr>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-md-6">
+                <span><b>RAM:</b> 8 GB</span>
+                <hr>
+               </div>
+               <div class="col-md-6">
+                <span><b>RAM:</b> 16 GB</span>
+                <hr>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-md-6">
+                <span><b>OS:</b> 64-bit Windows 7</span>
+                <hr>
+               </div>
+               <div class="col-md-6">
+                <span><b>OS:</b> 64-bit Windows 7</span>
+                <hr>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-md-6">
+                <span><b>VIDEO CARD:</b> nVidia GeForce GTX 960 2GB / AMD Radeon R7 370</span>
+                <hr>
+               </div>
+               <div class="col-md-6">
+                <span><b>VIDEO CARD:</b> nVidia GeForce GTX 1060 3GB / AMD Radeon RX 580 4GB
+                </span>
+                <hr>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-md-6">
+                <span><b>PIXEL SHADER:</b> 5.0</span>
+                <hr>
+               </div>
+               <div class="col-md-6">
+                <span><b>PIXEL SHADER:</b> 5.1</span>
+                <hr>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-md-6">
+                <span><b>VERTEX SHADER:
+                </b> 5.0</span>
+                <hr>
+               </div>
+               <div class="col-md-6">
+                <span><b>VERTEX SHADER:
+                </b> 5.1</span>
+                <hr>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-md-6">
+                <span><b>DEDICATED VIDEO MEMORY:
+                </b> 2 GB</span>
+                <hr>
+               </div>
+               <div class="col-md-6">
+                <span><b>DEDICATED VIDEO MEMORY:
+                </b> 4 GB</span>
+                <hr>
+               </div>
+           </div>
+
+           <div class="row">
+               <div class="col-md-4 px-0 mx-auto mt-2 text-center">
+                <a href="Tournamentreg.html"><button class="btn btn-success">Click Here to register</button></a>
+               </div>
+           </div>
+
+    </div>
+</div>
+
+
+
+
+ <!-- Footer -->
+ <div class="row" id="footer">
+    <div class="col-md-12  mx-auto text-center py-4">
+        <a href=""><i class="fab fa-facebook-f"></i></a>
+        <a href=""><i class="fab fa-instagram"></i></a>
+        <a href=""><i class="fab fa-twitter"></i></a>
+        <a href=""><i class="fab fa-linkedin"></i></a>
+        <a href=""><i class="fab fa-discord"></i></a>
+        <a href=""><i class="fab fa-twitch"></i></a>
+        <br>
+        <br>
+    </div>
+ 
+
+
+    <div class="col-md-12 mx-auto px-0 text-center mb-2">
+        <span><a href="">Social@picasso.com</a></span>
+
+    </div>
+
+
+
+    <div class="col-md-12 mx-auto px-0 text-center mt-3">
+        <span><a href="">+91-8837778760</a></span>
+
+    </div>
+
+   
+
+    <div class="col-md-12 mx-auto px-0 text-center mt-3">
+        <span style="color: white;font-size: 20px;">COPYRIGHT&copy; ALL RIGHTS RESERVED BY <span style="color: violet;">PICASSOGAMING</span></span>
+
+    </div>
+
+</div>
+</div>
+
+
+ 
+
+
+
+</body>
+</html>
